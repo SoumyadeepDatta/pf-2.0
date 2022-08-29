@@ -1,0 +1,541 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#myBtn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background: #fff;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+  box-shadow: 2px 2px 50px #000000;
+  transition: 0.2s;
+}
+
+#myBtn:hover {
+  background-color: #000;
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.greet {
+  margin: 100px 0px 20px 0px;
+  /*   text-shadow: 5px 5px 20px #000000; */
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.greet-sub {
+  font-size: 30px;
+}
+
+.intro p {
+  text-align: justify;
+  text-align-last: center;
+  padding: 0px 5px;
+  margin: 40px 0px 50px 0px;
+  /*   text-shadow: 5px 5px 30px #000000; */
+  line-height: 1.6;
+}
+
+.container p {
+  text-align: justify;
+}
+
+.container-flex {
+  margin: 0px;
+  padding: 20px 20px;
+}
+
+.container {
+  margin: 10px 5px;
+  padding: 5px 15px;
+}
+
+.container h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.container h2 {
+  font-family: "Space Mono", monospace;
+}
+
+.div-margin {
+  margin: 55px 10px 5px 10px;
+  text-align: center;
+}
+
+.intro {
+  /*   background-image: linear-gradient(61deg, #6724ed, #fac532); */
+  /*   color: #ffffff; */
+  animation: abstract 50s ease infinite;
+  height: 100vh;
+}
+
+.intro-text {
+  align-self: center;
+  text-align: center;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  margin: 50px 20px;
+}
+
+.card-img {
+  border-radius: 5px;
+  /*   border: 15px double #000000; */
+  box-shadow: 2px 2px 50px #000000;
+  transition: 0.2s;
+  width: 200px;
+  /*   align-items: center;
+  align-self: center; */
+}
+
+.card-img:hover {
+  transform: scale(1.5);
+}
+
+.card-text {
+  width: 600px;
+  align-self: center;
+  align-items: center;
+  margin: 0 10px 50px 10px;
+  text-align: center;
+  /*   background: red; */
+}
+
+.card sub {
+  font-family: "Space Mono", monospace;
+}
+
+.card-desc {
+  display: block;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.scroll {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  font-size: 50px;
+  text-shadow: 5px 5px 20px #000000;
+}
+
+.scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.scroll i {
+  animation: scrolldown 2.5s ease-out infinite;
+}
+
+.mono-ul {
+  justify-content: center;
+  transform: translateX(-20px);
+}
+
+.mono-ul li {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  list-style: none;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateX(-20px);
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.tools i {
+  color: #000000;
+  font-size: 50px;
+  transition: 0.2s;
+}
+
+.tools li {
+  list-style: none;
+  text-decoration: none;
+  margin: 25px 25px 25px 25px;
+  animation: wheelR 15s linear infinite;
+}
+
+.tools li:hover {
+  animation: none;
+}
+
+.tools i:hover {
+  transform: scale(2);
+  color: #1857f5;
+  text-shadow: 5px 5px 20px #1857f5;
+}
+
+.link-icon {
+  background: rgba(51, 170, 51, 0.5);
+  color: #000000;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+}
+
+.link-icon a {
+  text-decoration: none;
+}
+
+.link-icon i {
+  transition: 0.5s;
+}
+
+.link-icon:hover i {
+  transform: translateX(50%);
+}
+
+.info-div {
+  background: #131f33;
+}
+
+.info {
+  text-align: center;
+  padding: 40px 30px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+.img-thmb {
+  width: 100px;
+  margin: 15px 0 25px 0;
+  border-radius: 10px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 1);
+}
+
+.info span {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+}
+
+.info-text {
+  align-self: center;
+}
+
+.edu {
+  background: #131f33;
+}
+
+.edu-body {
+  margin: 70px 7px 70px 7px;
+}
+
+.edu-h1 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.timeline {
+  margin: 60px auto;
+  width: 270px;
+  border-left: 2px solid #ccc;
+  padding: 0 20px 0 30px;
+}
+
+.timeline div {
+  background-color: #fff;
+  margin: 25px 0px;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  line-height: 1.7;
+  position: relative;
+  transition: 0.2s;
+}
+
+.timeline div:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 3px solid #ddd;
+  position: absolute;
+  top: 10px;
+  left: -40px;
+}
+
+.timeline div:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #ddd transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -17px;
+  top: 10px;
+}
+
+.timeline div:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+  background: #0d1624;
+  margin: 0px;
+  padding: 20px 20px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  transform: translateX(-20px);
+  margin-bottom: 25px;
+}
+
+.social i {
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.social li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px 25px 0px 25px;
+}
+
+.social i:hover {
+  transform: scale(2);
+  color: #fac532;
+  text-shadow: 5px 5px 20px #fac532;
+}
+
+
+
+.cv{
+  border: none;
+  background-image: linear-gradient(61deg, #b51509, #1857f5);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 1);
+  transition: 0.2s;
+  animation: bouncy 5s ease infinite;
+  cursor: pointer;
+}
+
+.cv:hover{
+  transform: scale(1.5);
+  opacity: 1;
+  box-shadow: 2px 2px 50px rgba(255, 255, 255, 1);
+  animation: none;
+}
+
+.cv:active{
+  background: #fff;
+  color: #000;
+}
+
+@keyframes bouncy{
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+@keyframes wheelR {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes abstract {
+  0% {
+    background: #6724ed;
+    color: #ffffff;
+    text-shadow: 5px 5px 20px #000000;
+  }
+  50% {
+    background: #fac532;
+    color: #000000;
+    text-shadow: 5px 5px 20px #ffffff;
+  }
+  100% {
+    background: #6724ed;
+    color: #ffffff;
+    text-shadow: 5px 5px 20px #000000;
+  }
+}
+
+@media (min-width: 461px) {
+  .intro-text {
+    padding-top: 70px;
+  }
+  .timeline {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .greet {
+    font-size: 4rem;
+  }
+  .greet-sub {
+    font-size: 50px;
+  }
+  .intro-text {
+    padding-top: 50px;
+  }
+  .intro p {
+    line-height: 1.8;
+    font-size: 20px;
+  }
+  .timeline {
+    width: 400px;
+  }
+  .timeline h3 {
+    font-size: 25px;
+  }
+  .timeline h5 {
+    font-size: 15px;
+  }
+  .card-img {
+    width: 300px;
+  }
+  .card-desc {
+    font-size: 1.2rem;
+  }
+  .card-text h2 {
+    font-size: 2rem;
+  }
+  .link-icon {
+    font-size: 1.2rem;
+  }
+  .info-text span {
+    font-size: 1.2rem;
+  }
+  .info-text {
+    padding: 0px 30px;
+  }
+  .mono-ul {
+    font-size: 1.2rem;
+  }
+  .social i {
+    font-size: 1.5rem;
+  }
+  .footer span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .greet {
+    font-weight: 200;
+  }
+  .container h1 {
+    font-size: 4rem;
+  }
+  .intro p {
+    padding: 0px 35px;
+  }
+  .div-margin {
+    margin: 55px 50px 5px 50px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+  }
+  .edu h1 {
+    font-size: 4rem;
+  }
+  .greet {
+    font-size: 5rem;
+  }
+  .timeline {
+    width: 700px;
+  }
+  .card-text {
+    text-align: left;
+  }
+  .timeline h3 {
+    font-size: 30px;
+  }
+  .timeline h5 {
+    font-size: 20px;
+  }
+  .info {
+    align-items: center;
+    text-align: center;
+    padding: 50 100px;
+  }
+  .mono-ul {
+    font-size: 1.5rem;
+  }
+  .social i {
+    font-size: 2rem;
+  }
+  .footer span {
+    font-size: 1.2rem;
+  }
+}
