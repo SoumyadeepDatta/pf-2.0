@@ -34,6 +34,7 @@ body {
 #myBtn:hover {
   background-color: #000;
   transform: scale(1.2);
+  box-shadow: 2px 2px 50px #ffffff;
   color: #fff;
 }
 
@@ -324,6 +325,11 @@ body {
   padding: 20px 20px;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
+}
+
+.footer span{
+  opacity: 0.8;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
 }
 
 .social {
