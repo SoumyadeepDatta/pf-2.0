@@ -87,8 +87,11 @@ body {
 
 .intro {
   /*   background-image: linear-gradient(61deg, #6724ed, #fac532); */
-  /*   color: #ffffff; */
-  animation: abstract 50s ease infinite;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #6724ed,#1857f5,#633603,#033c04);
+  text-shadow: 5px 5px 20px #000000;
+  background-size: 400% 400%;
+  animation: abstract 10s ease infinite;
   height: 100vh;
 }
 
@@ -413,19 +416,13 @@ body {
 
 @keyframes abstract {
   0% {
-    background: #6724ed;
-    color: #ffffff;
-    text-shadow: 5px 5px 20px #000000;
+    background-position: 0% 50%;
   }
   50% {
-    background: #fac532;
-    color: #000000;
-    text-shadow: 5px 5px 20px #ffffff;
+    background-position: 100% 50%;
   }
   100% {
-    background: #6724ed;
-    color: #ffffff;
-    text-shadow: 5px 5px 20px #000000;
+    background-position: 0% 50%;
   }
 }
 
